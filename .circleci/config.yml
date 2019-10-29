@@ -38,7 +38,7 @@ workflows:
     version: 2
     Example_Workflow:
         jobs:
-            - Hello-World
+            - build 
             - I-Have-Code:
                 requires:
                     - Hello-World
@@ -52,4 +52,4 @@ workflows:
                     - I-Have-Code
             - Now-Complete:
                 requires:
-                    - Hold-For-Apprval
+                    - Hold-For-Approval

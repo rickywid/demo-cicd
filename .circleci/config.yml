@@ -41,10 +41,10 @@ workflows:
             - build 
             - I-Have-Code:
                 requires:
-                    - Hello-World
+                    - build
             - Run-With-Node:
                 requires:
-                    - Hello-World
+                    - build
             - Hold-For-Approval:
                 type: approval
                 requires:
